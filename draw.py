@@ -3,18 +3,17 @@ import time
 t=turtle.Pen()
 
 def mysqu(size):
-	for x in range (1,5):
+	for x in range (4):
 		t.forward(size)
 		t.left(90)
 
 t.reset()
 
-print('Please into squ number')
-i=input()
-print('please into squ long')
-l=input()
+i=raw_input('Please into squ number :')
+l=raw_input('please into squ long :')
 
-for x in range(1,i+1):
+
+for x in range(int(1),int(i)+1):
 	mysqu(l * x)
 
 time.sleep(10)
