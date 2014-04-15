@@ -7,7 +7,7 @@ ticks=('YAOO', 'GOOG', 'EBAY', 'AMAZ')
 URL='http://quote.yahoo.com/d/quotes.csv?s=%s&f=sllclp2'
 
 print '\nPrinces quoted as of:',ctime()
-print '\nTICKER'.ljust(8),'PRICE'.ljust(8),'CHG'.ljust(5),'%AGE'
+print '\nTICKER'.ljust(8),'PRICE'.ljust(8),'CHG'.ljust(5),'AGE'
 print '------'.ljust(8),'------'.ljust(8),'------'.ljust(5),'------'
 u=urlopen(URL % ','.join(ticks))
 
